@@ -1,0 +1,114 @@
+.video-control-button-left {
+  background-image: url(../../img/svg/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-control-button-right {
+  background-image: url(../../img/svg/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-control-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #331832;
+  border: none;
+}
+.video-controls-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.video-controls-item {
+  margin: 0 10px;
+}
+
+.youtube-slider {
+  text-align: center;
+}
+
+.counter-list {
+  position: relative;
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  /* or 32px */
+
+  text-align: center;
+
+  color: #1c1c1c;
+  margin: 30px -20px 35px -20px;
+  justify-content: center;
+}
+.counter-item::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 33px;
+  position: absolute;
+  z-index: -10;
+  top: -10px;
+}
+.counter-list :nth-child(1)::before {
+  background-image: url(../../img/svg/ellipse-orange.svg);
+  margin-left: 18px;
+}
+.counter-list :nth-child(2)::before {
+  background-image: url(../../img/svg/ellipse-blue.svg);
+  margin-left: 7px;
+}
+.counter-list :nth-child(3)::before {
+  background-image: url(../../img/svg/ellipse-green.svg);
+  margin-left: -2px;
+}
+
+.counter-item :last-child {
+  margin-top: 15px;
+}
+
+.counter-item {
+  margin: 0px 20px;
+  padding-left: 7px;
+}
+
+.counter-item-description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #1c1c1c;
+
+  justify-content: space-around;
+}
+
+.describe-slider-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1c1c1c;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.describe-slider-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 23px;
+
+  color: #1c1c1c;
+}
