@@ -1,11 +1,11 @@
 .video-control-button-left {
-  background-image: url(../../img/svg/arrow-left.svg);
+  background-image: url(./../img/svg/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .video-control-button-right {
-  background-image: url(../../img/svg/arrow-right.svg);
+  background-image: url(./../img/svg/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -57,15 +57,15 @@
   top: -10px;
 }
 .counter-list :nth-child(1)::before {
-  background-image: url(../../img/svg/ellipse-orange.svg);
+  background-image: url(./../img/svg/ellipse-orange.svg);
   margin-left: 18px;
 }
 .counter-list :nth-child(2)::before {
-  background-image: url(../../img/svg/ellipse-blue.svg);
+  background-image: url(./../img/svg/ellipse-blue.svg);
   margin-left: 7px;
 }
 .counter-list :nth-child(3)::before {
-  background-image: url(../../img/svg/ellipse-green.svg);
+  background-image: url(./../img/svg/ellipse-green.svg);
   margin-left: -2px;
 }
 
