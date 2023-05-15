@@ -1,29 +1,36 @@
-.video-control-button-left {
+.control-button-left {
   background-image: url(./../img/svg/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.video-control-button-right {
+.control-button-right {
   background-image: url(./../img/svg/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.video-control-button {
+.control-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.control-button--primary {
   background-color: #331832;
   border: none;
 }
-.video-controls-list {
+.control-button--secondary {
+  background-color: transparent;
+  border: 1px solid #adacac;
+}
+.controls-list {
   display: flex;
   justify-content: center;
   margin: 0 -10px;
 }
 
-.video-controls-item {
+.controls-item {
   margin: 0 10px;
 }
 

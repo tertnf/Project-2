@@ -73,3 +73,24 @@ h3 {
 section {
   padding-bottom: 40px;
 }
+
+.primary-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: center;
+  margin: 0 auto;
+
+  background: linear-gradient(88.74deg, #d7a3e4 -3.98%, #eceef1 110.81%),
+    #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 203px;
+}
+
+.primary-section {
+  padding-top: 20px;
+}

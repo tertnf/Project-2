@@ -174,27 +174,35 @@ body {
   }
 }
 
-.video-control-button-left {
+.control-button-left {
   background-image: url(./../img/svg/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.video-control-button-right {
+.control-button-right {
   background-image: url(./../img/svg/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.video-control-button {
+.control-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.control-button--primary {
   background-color: #331832;
   border: none;
 }
 
-.video-controls-list {
+.control-button--secondary {
+  background-color: transparent;
+  border: 1px solid #adacac;
+}
+
+.controls-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +212,7 @@ body {
   margin: 0 -10px;
 }
 
-.video-controls-item {
+.controls-item {
   margin: 0 10px;
 }
 
@@ -338,4 +346,46 @@ h3 {
 
 section {
   padding-bottom: 40px;
+}
+
+.primary-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(88.74deg, #d7a3e4 -3.98%, #eceef1 110.81%), #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 203px;
+}
+
+.primary-section {
+  padding-top: 20px;
+}
+
+.qualification-section {
+  background-color: #331832;
+}
+
+.qualification-slider-description {
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+
+.qualification-description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f0efef;
+}
+
+.qualification-section h2 {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */
