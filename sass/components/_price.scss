@@ -1,0 +1,97 @@
+.price-section .social-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.price-item {
+  max-width: 320px;
+  height: auto;
+  background-color: #994d7b;
+  box-shadow: 0px 8px 30px rgba(35, 25, 38, 0.15);
+  border-radius: 7px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+
+.price-list :not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.price-list-price {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+}
+.price-list-time {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.price-list-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 25px;
+}
+.appointment-button {
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #d9d9d9;
+
+  padding: auto 24px;
+
+  max-width: 320px;
+  height: 75px;
+
+  background: linear-gradient(267.58deg, #993fdf 0%, #1c30e4 100%);
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price-list {
+  margin-bottom: 45px;
+}
+
+.price-img {
+  margin-top: 34px;
+  margin-bottom: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
