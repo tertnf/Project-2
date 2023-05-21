@@ -202,7 +202,7 @@
 .features-item.features-details-summary .features-text::after {
   display: block;
   content: "";
-  background-image: url(./../../img/svg/double-arrow-down.svg);
+  background-image: url(./../img/svg/double-arrow-down.svg);
   width: 16px;
   height: 19px;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@
 .program::after {
   display: block;
   content: "";
-  background-image: url(./../../img/svg/round-arrow-right.svg);
+  background-image: url(./../img/svg/round-arrow-right.svg);
   width: 34px;
   height: 34px;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@
 }
 
 .learning-section {
-  background-image: url(./../../img/svg/decor-top.svg),
+  background-image: url(./../img/svg/decor-top.svg),
     url(./../../img/svg/decor-bottom.svg);
   background-size: 100%;
   background-repeat: no-repeat;
