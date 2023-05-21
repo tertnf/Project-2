@@ -9,7 +9,7 @@
   left: -40px;
   content: "";
   display: inline-block;
-  background-image: url(./../img/svg/tick.svg);
+  background-image: url(./../img/svg/hero-tick.svg);
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -26,7 +26,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-  margin: 0 -20px;
+  // margin: 0 -20px;
+  margin: 0 -10px;
 }
 
 .hero-button {
@@ -37,7 +38,8 @@
   border-radius: 30px 5px;
   color: #ffffff;
   padding: 13px 14px;
-  margin: 0 20px;
+  // margin: 0 20px;
+  margin: 0 10px;
 }
 
 .primary-button {
@@ -85,4 +87,6 @@
 }
 .hero-img {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }

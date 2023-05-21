@@ -69,7 +69,7 @@ img {
   left: -40px;
   content: "";
   display: inline-block;
-  background-image: url(./../img/svg/tick.svg);
+  background-image: url(./../img/svg/hero-tick.svg);
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px;
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
 
 .hero-button {
@@ -104,7 +104,7 @@ img {
   border-radius: 30px 5px;
   color: #ffffff;
   padding: 13px 14px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .primary-button {
@@ -148,6 +148,8 @@ img {
 
 .hero-img {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -233,7 +235,7 @@ body {
   /* or 32px */
   text-align: center;
   color: #1c1c1c;
-  margin: 30px -20px 35px -20px;
+  margin: 30px -10px 35px -10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -269,7 +271,7 @@ body {
 }
 
 .counter-item {
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding-left: 7px;
 }
 
@@ -521,7 +523,7 @@ section {
   text-transform: uppercase;
   color: #d9d9d9;
   padding: auto 24px;
-  max-width: 320px;
+  width: 320px;
   height: 75px;
   background: linear-gradient(267.58deg, #993fdf 0%, #1c30e4 100%);
   border-radius: 10px;
@@ -539,4 +541,330 @@ section {
   margin-bottom: 19px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.learning-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 320px;
+  background: linear-gradient(75deg, #ebedf4 0% 50%, #ccd5e7 50% 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.learning-item {
+  padding-top: 10px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #1c1c1c;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+}
+
+.learning-item::after {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 19px;
+  background-image: url(./../img/svg/double-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.level-list {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-top: 58px;
+  padding-bottom: 40px;
+}
+
+.first-level-block {
+  background-color: #ebedf4;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.second-level-block {
+  background-color: #ccd5e7;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.level-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+  margin-left: 65px;
+}
+.level-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.level-item::before {
+  position: absolute;
+  display: block;
+  background-image: url(./../../img/svg/tick.svg);
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: cover;
+  left: 15px;
+}
+
+.learning-index {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  color: #2c38a1;
+}
+
+.timing-list {
+  width: 320px;
+  position: relative;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timing-list :not(:last-child) {
+  margin-bottom: 20px;
+}
+.timing-list :nth-child(1) .learning-index {
+  position: absolute;
+  left: 27px;
+}
+.timing-list :nth-child(2) .learning-index {
+  position: absolute;
+  left: 20px;
+}
+
+.timing-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+  margin-left: 78px;
+}
+
+.tab_contents {
+  display: none;
+}
+
+.tab_contents.active_tab {
+  display: block;
+}
+
+.learning-item::before {
+  position: absolute;
+  display: none;
+  content: "";
+  background-image: url(./../img/svg/right-arrow.svg);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: contain;
+  margin-right: auto;
+  bottom: 2px;
+  margin-left: 20px;
+}
+
+.learning-item.is_open::before {
+  display: block;
+}
+
+.learning-item.is_open::after {
+  display: none;
+}
+
+.features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features-list :not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.features-item {
+  width: 325px;
+  height: 85px;
+  transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: #efe3d5;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 0px 0px rgb(212, 195, 175), 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 0px 0px rgb(212, 195, 175), 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.features-item.features-details-text {
+  width: 290px;
+  height: auto;
+  -webkit-transform: none;
+          transform: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: -9px;
+}
+
+.features-item.features-details-summary .features-text::after {
+  display: block;
+  content: "";
+  background-image: url(./../../img/svg/double-arrow-down.svg);
+  width: 16px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: contain;
+  position: absolute;
+  right: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.features-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1c1c1c;
+  margin: auto;
+  padding-top: 7px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  padding-right: 60px;
+}
+.features-text.hidden-text {
+  -webkit-transform: none;
+          transform: none;
+  padding: 19px 18px 14px 18px;
+  text-align: left;
+}
+
+.learning-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: -62px;
+}
+
+.program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #1c30e4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 61px;
+  margin-bottom: 40px;
+}
+
+.program::after {
+  display: block;
+  content: "";
+  background-image: url(./../../img/svg/round-arrow-right.svg);
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: contain;
+  margin-left: 26px;
+}
+
+.learning-section {
+  background-image: url(./../../img/svg/decor-top.svg), url(./../../img/svg/decor-bottom.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 428px, 1320px;
+}
+
+.learning-section h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 29px;
+}
+
+.learning-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #1c1c1c;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+
+.learning-section h2 {
+  margin-top: 20px;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=main.css.map */
