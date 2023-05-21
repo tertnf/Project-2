@@ -834,7 +834,7 @@ section {
 }
 
 .learning-section {
-  background-image: url(./../img/svg/decor-top.svg), url(./../../img/svg/decor-bottom.svg);
+  background-image: url(./../img/svg/decor-top.svg), url(./../img/svg/decor-bottom.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 428px, 1320px;
