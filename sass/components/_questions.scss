@@ -1,36 +1,13 @@
 .questions-list details summary {
   list-style: none;
-  //   &::before {
-  //     position: absolute;
-  //     right: 20px;
-  //     content: "";
-  //     display: block;
-  //     background-image: url(./../../img/svg/double-arrow-down.svg);
-  //     width: 16px;
-  //     height: 19px;
-  //     top: 50%;
-  //     margin-top: -10px;
-  //   }
 }
 
-// .questions-list details::before {
-//   display: none;
-//   position: absolute;
-//   right: 20px;
-//   content: "";
-//   display: block;
-//   background-image: url(./../../img/svg/right-arrow.svg);
-//   width: 19px;
-//   height: 16px;
-//   top: 50%;
-//   margin-top: -8px;
-// }
 .questions-list details summary::before {
   position: absolute;
   right: 20px;
   content: "";
   display: block;
-  background-image: url(./../../img/svg/double-arrow-down.svg);
+  background-image: url(./../img/svg/double-arrow-down.svg);
   width: 16px;
   height: 19px;
   top: 0;
@@ -44,15 +21,12 @@
     right: 20px;
     content: "";
     display: block;
-    background-image: url(./../../img/svg/right-arrow.svg);
+    background-image: url(./../img/svg/right-arrow.svg);
     width: 19px;
     height: 16px;
     top: 0;
     margin-top: 30px;
   }
-  //   &.questions-item {
-  //     background-color: #fff;
-  //   }
 }
 .questions-list .questions-list {
   display: block;
