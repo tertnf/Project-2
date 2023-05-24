@@ -878,7 +878,7 @@ section {
   right: 20px;
   content: "";
   display: block;
-  background-image: url(./../../img/svg/double-arrow-down.svg);
+  background-image: url(./../img/svg/double-arrow-down.svg);
   width: 16px;
   height: 19px;
   top: 0;
@@ -893,7 +893,7 @@ section {
   right: 20px;
   content: "";
   display: block;
-  background-image: url(./../../img/svg/right-arrow.svg);
+  background-image: url(./../img/svg/right-arrow.svg);
   width: 19px;
   height: 16px;
   top: 0;
