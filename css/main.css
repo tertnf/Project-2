@@ -867,4 +867,78 @@ section {
 .learning-section h2 {
   margin-top: 20px;
   margin-bottom: 24px;
+}
+
+.questions-list details summary {
+  list-style: none;
+}
+
+.questions-list details summary::before {
+  position: absolute;
+  right: 20px;
+  content: "";
+  display: block;
+  background-image: url(./../../img/svg/double-arrow-down.svg);
+  width: 16px;
+  height: 19px;
+  top: 0;
+  margin-top: 25px;
+}
+
+.questions-list details[open] .questions-details {
+  margin-bottom: 27px;
+}
+.questions-list details[open] .questions-details::before {
+  position: absolute;
+  right: 20px;
+  content: "";
+  display: block;
+  background-image: url(./../../img/svg/right-arrow.svg);
+  width: 19px;
+  height: 16px;
+  top: 0;
+  margin-top: 30px;
+}
+
+.questions-list .questions-list {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.questions-item {
+  position: relative;
+  background: #eaebf3;
+  border-radius: 10px;
+  width: 318px;
+  height: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+  padding: 22px 49px 21px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.questions-section h2 {
+  margin-bottom: 40px;
+}
+.questions-section h3 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #efeeee;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.questions-list :not(:last-child) {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -23,3 +23,19 @@ for (let i = 0; i < $summaries.length; i++) {
     document.getElementById(newid).classList.toggle("hidden");
   });
 }
+
+// let detailsElements = document.querySelectorAll("details.qd");
+// console.log(detailsElements);
+
+// function handleClickOnDetails() {
+
+//   for (const item of detailsElements) {
+//     console.log(item);
+//     if (item.hasAttribute("open")) {
+//       item.parentNode.style.backgroundColor = "#EAEBF3";
+//     } else item.parentNode.style.backgroundColor = "#C99B9B";
+//   }
+// }
+// detailsElements.forEach(function (item) {
+//   item.addEventListener("click", handleClickOnDetails);
+// });
