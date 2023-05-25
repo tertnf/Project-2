@@ -116,6 +116,45 @@ $(document).ready(function () {
     //   },
     // ],
   });
+  $(".feedback-slider").slick({
+    arrows: false,
+    // appendArrows: $(".arrows-feedback-slider"),
+    infinite: true,
+    speed: 500,
+    easing: "ease",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // asNavFor: ".qualification-slider-description",
+
+    variableHeight: true,
+    // adaptiveHeight: true,
+    // centerMode: true,
+    // rows: 1,
+    // responsive: [
+    // {
+    //   breakpoint: 600,
+    //   settings: {
+    //     slidesToShow: 2,
+
+    //     slidesToScroll: 1,
+    //   },
+    // },
+    // {
+    //   breakpoint: 400,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //   },
+    // },
+    //   {
+    //     breakpoint: 320,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  });
 });
 
 $(".qualification-slider-description").slick({
@@ -170,4 +209,11 @@ $(".qualification-slider-controls-arrow-left").click(function (event) {
 });
 $(".qualification-slider-controls-arrow-right").click(function (event) {
   $(".qualification-slider").slick("slickNext");
+});
+
+$(".feedback-slider-controls-arrow-left").click(function (event) {
+  $(".feedback-slider").slick("slickPrev");
+});
+$(".feedback-slider-controls-arrow-right").click(function (event) {
+  $(".feedback-slider").slick("slickNext");
 });
