@@ -124,42 +124,42 @@ $(document).ready(function () {
     easing: "ease",
     slidesToShow: 1,
     slidesToScroll: 1,
-    // asNavFor: ".qualification-slider-description",
+    //   // asNavFor: ".qualification-slider-description",
 
-    variableHeight: true,
-    // adaptiveHeight: true,
-    // centerMode: true,
-    // rows: 1,
-    // responsive: [
-    // {
-    //   breakpoint: 600,
-    //   settings: {
-    //     slidesToShow: 2,
+    //   // variableHeight: true,
+    //   // adaptiveHeight: true,
+    //   // centerMode: true,
+    //   // rows: 1,
+    //   // responsive: [
+    //   // {
+    //   //   breakpoint: 600,
+    //   //   settings: {
+    //   //     slidesToShow: 2,
 
-    //     slidesToScroll: 1,
-    //   },
-    // },
-    // {
-    //   breakpoint: 400,
-    //   settings: {
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //   },
-    // },
-    //   {
-    //     breakpoint: 320,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    //   //     slidesToScroll: 1,
+    //   //   },
+    //   // },
+    //   // {
+    //   //   breakpoint: 400,
+    //   //   settings: {
+    //   //     slidesToShow: 1,
+    //   //     slidesToScroll: 1,
+    //   //   },
+    //   // },
+    //   //   {
+    //   //     breakpoint: 320,
+    //   //     settings: {
+    //   //       slidesToShow: 1,
+    //   //       slidesToScroll: 1,
+    //   //     },
+    //   //   },
+    //   // ],
   });
 });
 
 $(".qualification-slider-description").slick({
   arrows: false,
-  // appendArrows: $(".arrows-feedback-slider"),
+  appendArrows: $(".arrows-feedback-slider"),
   infinite: true,
   speed: 500,
   easing: "ease",

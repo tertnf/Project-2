@@ -370,6 +370,10 @@ section {
   background-color: #331832;
 }
 
+.hidden {
+  display: none;
+}
+
 .qualification-section {
   background-color: #331832;
 }
@@ -956,10 +960,11 @@ section {
           box-shadow: 0px 20px 50px rgba(156, 126, 99, 0.25);
   border-radius: 20px;
   width: 322px;
-  height: auto;
+  height: 436px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .feedback-title {
@@ -1020,4 +1025,5 @@ section {
 
 .feedback-wrap {
   padding: 81px 36px 86px 36px;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
