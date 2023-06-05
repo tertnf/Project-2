@@ -1,0 +1,55 @@
+.article-wrap {
+  position: relative;
+  padding: 10px 45px 10px 94px;
+  background: #ffffff;
+  box-shadow: 0px 3.40707px 9.7345px rgba(28, 31, 39, 0.15);
+  border-radius: 9.7345px;
+
+  margin-left: 26px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+.article-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1c1c1c;
+  margin-bottom: 15px;
+}
+.article-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  color: #1c1c1c;
+  margin-bottom: 23px;
+}
+.article-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #415fcc;
+  text-align: right;
+}
+
+.article-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -26px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
