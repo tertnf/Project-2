@@ -1085,7 +1085,7 @@ section {
 }
 
 .contacts-bg-2 {
-  background-image: url(../../img/mobile/telegram.png);
+  background-image: url(../img/mobile/telegram.png);
   width: 242px;
   height: 221px;
   display: block;
@@ -1098,7 +1098,7 @@ section {
 }
 
 .contacts-bg-1 {
-  background-image: url(../../img/mobile/whatsapp.png);
+  background-image: url(../img/mobile/whatsapp.png);
   width: 186px;
   height: 171px;
   display: block;
@@ -1133,22 +1133,22 @@ section {
   margin-bottom: 57px;
 }
 .contacts-list :nth-child(1).contacts-item::before {
-  background-image: url(../../img/svg/whatsapp.svg);
+  background-image: url(../img/svg/whatsapp.svg);
   width: 40px;
   height: 43px;
 }
 .contacts-list :nth-child(2).contacts-item::before {
-  background-image: url(../../img/svg/telegram.svg);
+  background-image: url(../img/svg/telegram.svg);
   width: 40px;
   height: 40px;
 }
 .contacts-list :nth-child(3).contacts-item::before {
-  background-image: url(../../img/svg/viber.svg);
+  background-image: url(../img/svg/viber.svg);
   width: 39px;
   height: 41px;
 }
 .contacts-list :nth-child(4).contacts-item::before {
-  background-image: url(../../img/svg/round-email.svg);
+  background-image: url(../img/svg/round-email.svg);
   width: 40px;
   height: 40px;
 }
