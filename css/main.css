@@ -1082,4 +1082,202 @@ section {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.contacts-bg-2 {
+  background-image: url(../../img/mobile/telegram.png);
+  width: 242px;
+  height: 221px;
+  display: block;
+  background-size: contain;
+  position: absolute;
+  bottom: 0px;
+  right: 33%;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+
+.contacts-bg-1 {
+  background-image: url(../../img/mobile/whatsapp.png);
+  width: 186px;
+  height: 171px;
+  display: block;
+  background-size: contain;
+  position: absolute;
+  z-index: 5;
+  bottom: -10px;
+  left: 33%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.contacts-bg-wrap {
+  position: relative;
+  max-width: 323px;
+  height: 231px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-item::before {
+  content: "";
+  background-size: cover;
+  display: block;
+  background-repeat: no-repeat;
+  left: 0px;
+  position: absolute;
+}
+
+.contacts-list {
+  position: relative;
+  margin-bottom: 57px;
+}
+.contacts-list :nth-child(1).contacts-item::before {
+  background-image: url(../../img/svg/whatsapp.svg);
+  width: 40px;
+  height: 43px;
+}
+.contacts-list :nth-child(2).contacts-item::before {
+  background-image: url(../../img/svg/telegram.svg);
+  width: 40px;
+  height: 40px;
+}
+.contacts-list :nth-child(3).contacts-item::before {
+  background-image: url(../../img/svg/viber.svg);
+  width: 39px;
+  height: 41px;
+}
+.contacts-list :nth-child(4).contacts-item::before {
+  background-image: url(../../img/svg/round-email.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.contacts-title {
+  display: inline-block;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.contacts-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #1c1c1c;
+  margin-left: 70px;
+}
+
+.contacts-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #1c1c1c;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contacts-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-top: 20px;
+  margin-bottom: 37px;
+}
+
+.contacts-form {
+  position: relative;
+  padding: 21px 20px 59px 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 300px;
+  background: #fdfdfd;
+  -webkit-box-shadow: 0px 7px 20px rgba(35, 32, 28, 0.15);
+          box-shadow: 0px 7px 20px rgba(35, 32, 28, 0.15);
+  border-radius: 20px;
+}
+.contacts-form input {
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.contacts-form input::-webkit-input-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3a3a;
+  opacity: 0.4;
+}
+.contacts-form input::-moz-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3a3a;
+  opacity: 0.4;
+}
+.contacts-form input:-ms-input-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3a3a;
+  opacity: 0.4;
+}
+.contacts-form input::-ms-input-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3a3a;
+  opacity: 0.4;
+}
+.contacts-form input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3a3a;
+  opacity: 0.4;
+}
+
+.contacts-section .contacts-button {
+  width: 225px;
+  height: 50px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.contacts-section {
+  padding-bottom: 65px;
 }/*# sourceMappingURL=main.css.map */
