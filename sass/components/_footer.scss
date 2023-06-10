@@ -1,0 +1,111 @@
+footer .logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 11px;
+}
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+.sosial-media-list {
+  display: flex;
+  margin-right: -15px;
+  margin-bottom: 53px;
+}
+.sosial-media-item {
+  margin-right: 15px;
+}
+
+h2.footer-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  /* or 114% */
+
+  color: #f2f1f1;
+  text-transform: unset;
+  background-image: unset;
+  background-size: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  text-align: left;
+  margin-bottom: 25px;
+  margin-top: unset;
+}
+
+.footer-text-wrap {
+  border-top: 1px dashed #d3d3d3;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+.policy,
+.copirate {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #f2f1f1;
+}
+
+.footer-menu {
+  margin-bottom: 34px;
+  & :not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.my-contacts-list {
+  margin-bottom: 18px;
+  & :not(:last-child) {
+    margin-bottom: 14px;
+  }
+  & :nth-child(1).my-contacts-item::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(./../img/svg/mail.svg);
+    background-size: contain;
+    left: -55px;
+    top: -3px;
+  }
+  & :nth-child(2).my-contacts-item::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(./../img/svg/phone.svg);
+    background-size: contain;
+    left: -55px;
+    top: -3px;
+  }
+}
+
+.my-contacts-item {
+  margin-left: 55px;
+  position: relative;
+}
+
+.my-contacts-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #f2f1f1;
+}
