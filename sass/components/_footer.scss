@@ -58,7 +58,7 @@ h2.footer-title {
   color: #f2f1f1;
 }
 
-.footer-menu {
+.footer-menu-list {
   margin-bottom: 34px;
   & :not(:last-child) {
     margin-bottom: 8px;
@@ -79,7 +79,7 @@ h2.footer-title {
     background-image: url(./../img/svg/mail.svg);
     background-size: contain;
     left: -55px;
-    top: -3px;
+    top: 0px;
   }
   & :nth-child(2).my-contacts-item::before {
     position: absolute;
@@ -90,7 +90,7 @@ h2.footer-title {
     background-image: url(./../img/svg/phone.svg);
     background-size: contain;
     left: -55px;
-    top: -3px;
+    top: 0px;
   }
 }
 
@@ -100,6 +100,17 @@ h2.footer-title {
 }
 
 .my-contacts-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #f2f1f1;
+}
+
+.footer-menu-item {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
