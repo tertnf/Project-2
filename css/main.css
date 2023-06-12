@@ -1282,6 +1282,45 @@ section {
   padding-bottom: 65px;
 }
 
+.datalist-input-wrap {
+  position: relative;
+}
+
+.contacts-form .datalist-input-wrap::before {
+  top: 15px;
+  position: absolute;
+  content: "";
+  background-image: url(./../../img/svg/arrow-down.svg);
+  background-size: contain;
+  width: 16px;
+  height: 11px;
+  display: block;
+  background-repeat: no-repeat;
+  right: 14px;
+}
+
+.datalist-list {
+  top: 240px;
+  position: absolute;
+  padding: 8px 55px 10px 20px;
+  width: 280px;
+  height: 149px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+.datalist-list :not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.datalist-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828181;
+}
+
 footer .logo {
   margin-left: auto;
   margin-right: auto;

@@ -384,7 +384,7 @@
   <ul class="list contacts-list">
     <li class="contacts-item"><a class='link contacts-link' href="https://wa.me/+380501884078" target="_blank"><span class="contacts-title">Whats App</span><br> +380501884078</a> </li>
     <li class="contacts-item"><a class='link contacts-link' href="https://t.me/solomatina_oksana" target="_blank"><span class="contacts-title">Telegram</span><br> +380501884078</a> </li>
-    <li class="contacts-item"><a class='link contacts-link' href="viber://chat?number= [%2B380501884078]" target="_blank"><span class="contacts-title">Viber</span><br> +380501884078</a> </li>
+    <li class="contacts-item"><a class='link contacts-link' href="viber://contact?number=%2B380501884078" target="_blank"><span class="contacts-title">Viber</span><br> +380501884078</a> </li>
     <li class="contacts-item"><a class='link contacts-link' href="mailto:Chaykaoksy@gmail.com" target="_blank"><span class="contacts-title">E-mail</span><br>Chaykaoksy@gmail.com</a></li>
   </ul>
   <div class="contacts-bg-wrap">
@@ -400,13 +400,17 @@
       <input type="tel" name="phone" placeholder="Телефон">
       <input type="email" name="email" placeholder="E-mail">
       
-   <input type="text" list="consultation-list" placeholder="Виберіть будь-ласка"> 
-  <datalist id="consultation-list">
-    <option value="Цікавить сімейна">
-    <option value="Хочу дізнатись про навчання">
-    <option value="Записатися на особисту терапію">
-    <option value="Супервізія">
-     </datalist>
+   <div class="datalist-input-wrap">
+
+     <input type="text" class="datalist-input" placeholder="Виберіть будь-ласка"> 
+   </div>
+  <ul class="list datalist-list hidden">
+    <li class="datalist-item">Цікавить сімейна</li>
+    <li class="datalist-item">Хочу дізнатись про навчання</li>
+    <li class="datalist-item">Записатися на особисту терапію</li>
+    <li class="datalist-item">Супервізія</li>
+    
+    </ul>
   <button class="appointment-button contacts-button" type="submit">ВІДПРАВИТИ</button>
  </form> 
 

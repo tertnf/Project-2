@@ -47,6 +47,7 @@ for (let i = 0; i < $summaries.length; i++) {
 //   wrap.append(y);
 // });
 // console.log(cutPElement);
+
 cutFeedbackTextCreation();
 
 function cutFeedbackTextCreation() {
@@ -74,3 +75,28 @@ function cutFeedbackTextCreation() {
       .classList.toggle("hidden");
   });
 });
+
+const dropDownList = document.querySelector(".datalist-input");
+
+let dataList = document.getElementsByClassName("datalist-list");
+let contactForm = document.getElementsByClassName("contacts-form");
+
+dropDownList.addEventListener("click", (event) => {
+  dataList[0].classList.toggle("hidden");
+  dataList[0].classList.toggle("is-open");
+  if (dataList[0].classList.contains("is-open")) {
+    contactForm[0].style.height = "434px";
+  } else contactForm[0].style.height = "300px";
+});
+
+dataList[0].addEventListener("click", selectDatalistItem);
+
+function selectDatalistItem(event) {
+  if (event.target.nodeName !== "LI") {
+    return;
+  }
+  dropDownList.value = event.target.textContent;
+  dataList[0].classList.toggle("hidden");
+  dataList[0].classList.toggle("is-open");
+  contactForm[0].style.height = "300px";
+}
