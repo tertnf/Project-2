@@ -1290,7 +1290,7 @@ section {
   top: 15px;
   position: absolute;
   content: "";
-  background-image: url(./../../img/svg/arrow-down.svg);
+  background-image: url(./../img/svg/arrow-down.svg);
   background-size: contain;
   width: 16px;
   height: 11px;
