@@ -47,20 +47,44 @@ for (let i = 0; i < $summaries.length; i++) {
 //   wrap.append(y);
 // });
 // console.log(cutPElement);
+let feedbackText = document.querySelectorAll(".feedback-text");
+let feedbackStyleClass = "feedback-text";
+let feedbackStyleClassModified = "feedback-text-cut";
+let feedbackCutLength = 100;
 
-cutFeedbackTextCreation();
+cutFeedbackTextCreation(
+  feedbackText,
+  feedbackCutLength,
+  feedbackStyleClass,
+  feedbackStyleClassModified
+);
 
-function cutFeedbackTextCreation() {
-  let feedbackText = document.querySelectorAll(".feedback-text");
-  feedbackText.forEach((element) => {
-    let cutElement = element.textContent.slice(0, 100);
+let articleText = document.querySelectorAll(".article-text");
+let articleCutLength = 50;
+let articleStyleClass = "article-text";
+let articleStyleClassModified = "article-text-cut";
+cutFeedbackTextCreation(
+  articleText,
+  articleCutLength,
+  articleStyleClass,
+  articleStyleClassModified
+);
+
+function cutFeedbackTextCreation(
+  textOrigin,
+  cutLength,
+  styleClass,
+  styleClassModified
+) {
+  textOrigin.forEach((element) => {
+    let cutElement = element.textContent.slice(0, `${cutLength}`);
     let cutElementModify = `${cutElement}...`;
     let newP = document.createElement("p");
 
     newP.textContent = cutElementModify;
     element.parentNode.append(newP);
-    newP.classList.add("feedback-text");
-    newP.classList.add("feedback-text-cut");
+    newP.classList.add(`${styleClass}`);
+    newP.classList.add(`${styleClassModified}`);
   });
 }
 
@@ -73,6 +97,34 @@ function cutFeedbackTextCreation() {
     item
       .getElementsByClassName("feedback-text-cut")[0]
       .classList.toggle("hidden");
+  });
+});
+
+[...document.querySelectorAll(".articles-item")].forEach(function (item) {
+  item.addEventListener("click", function () {
+    // item.style.height = "300px";
+    if (
+      item
+        .getElementsByClassName("article-text")[0]
+        .classList.contains("hidden")
+    ) {
+      item.childNodes[1].style.height = "500px";
+    } else {
+      item.childNodes[1].style.height = "auto";
+    }
+
+    item.getElementsByClassName("article-text")[0].classList.toggle("hidden");
+    item.getElementsByClassName("article-button")[0].classList.toggle("hidden");
+    item
+      .getElementsByClassName("article-text-cut")[0]
+      .classList.toggle("hidden");
+
+    item.childNodes[1].firstChild.nextSibling.classList.toggle(
+      "article-img-transform"
+    );
+    item
+      .getElementsByClassName("article-text")[0]
+      .classList.toggle("article-text-transform");
   });
 });
 
