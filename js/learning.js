@@ -103,14 +103,15 @@ function cutFeedbackTextCreation(
 [...document.querySelectorAll(".articles-item")].forEach(function (item) {
   item.addEventListener("click", function () {
     // item.style.height = "300px";
+
     if (
       item
         .getElementsByClassName("article-text")[0]
         .classList.contains("hidden")
     ) {
-      item.childNodes[1].style.height = "500px";
+      item.getElementsByClassName("article-wrap")[0].style.height = "500px";
     } else {
-      item.childNodes[1].style.height = "auto";
+      item.getElementsByClassName("article-wrap")[0].style.height = "auto";
     }
 
     item.getElementsByClassName("article-text")[0].classList.toggle("hidden");
@@ -119,9 +120,9 @@ function cutFeedbackTextCreation(
       .getElementsByClassName("article-text-cut")[0]
       .classList.toggle("hidden");
 
-    item.childNodes[1].firstChild.nextSibling.classList.toggle(
-      "article-img-transform"
-    );
+    item
+      .getElementsByClassName("article-wrap")[0]
+      .firstChild.nextSibling.classList.toggle("article-img-transform");
     item
       .getElementsByClassName("article-text")[0]
       .classList.toggle("article-text-transform");
