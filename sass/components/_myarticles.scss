@@ -56,7 +56,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: capitalize;
 
   color: #1c1c1c;
   margin-bottom: 23px;
@@ -78,7 +77,11 @@
   height: 100px;
   left: -26px;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%) perspective(100px) rotateY(-2deg);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .article-img-transform {

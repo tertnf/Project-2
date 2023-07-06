@@ -153,3 +153,12 @@ function selectDatalistItem(event) {
   dataList[0].classList.toggle("is-open");
   contactForm[0].style.height = "300px";
 }
+
+// // mobile-menu
+// let mobileMenu = querySelectorAll("nav");
+// let burger = querySelectorAll("burger");
+// let cross = querySelectorAll("cross");
+// burger.addEventListener("click", function () {
+//   mobileMenu.classList.remove("hidden");
+//   cross.classList.remove("hidden");
+// });
