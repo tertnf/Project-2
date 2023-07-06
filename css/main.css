@@ -1490,7 +1490,7 @@ h2.footer-title {
 
 .mobile-menu-item::before {
   content: "";
-  background-image: url(./../../img/svg/double-right-arrow.svg);
+  background-image: url(./../img/svg/double-right-arrow.svg);
   width: 19px;
   height: 18px;
   display: block;
@@ -1521,9 +1521,11 @@ h2.footer-title {
 .menu-container {
   background-color: #331832;
   width: 100vw;
+  height: 100vh;
   position: fixed;
   padding: 70px 40px 56px 36px;
   top: 0;
+  left: 0;
   display: none;
   z-index: 200;
   -webkit-transform: translateX(100%);

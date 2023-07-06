@@ -32,11 +32,11 @@
 .menu-container {
   background-color: #331832;
   width: 100vw;
-
+  height: 100vh;
   position: fixed;
   padding: 70px 40px 56px 36px;
   top: 0;
-  left:0;
+  left: 0;
   display: none;
   z-index: 200;
   transform: translateX(100%);
