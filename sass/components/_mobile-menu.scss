@@ -1,6 +1,6 @@
 .mobile-menu-item::before {
   content: "";
-  background-image: url(./../../img/svg/double-right-arrow.svg);
+  background-image: url(./../img/svg/double-right-arrow.svg);
   width: 19px;
   height: 18px;
   display: block;
@@ -36,6 +36,7 @@
   position: fixed;
   padding: 70px 40px 56px 36px;
   top: 0;
+  left:0;
   display: none;
   z-index: 200;
   transform: translateX(100%);
