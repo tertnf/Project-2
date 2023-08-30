@@ -17,6 +17,9 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+    @media screen and (max-width: 375px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -27,6 +30,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+  }
 }
 
 .menu-container {
@@ -59,7 +66,7 @@
   background-color: transparent;
   padding: 0px 0px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 }
@@ -78,7 +85,7 @@
   cursor: pointer;
   outline: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 }
@@ -87,18 +94,13 @@
   display: none;
 }
 
-// .cross {
-//   position: absolute;
-//   display: block;
-//   width: 26px;
-//   height: 25px;
-//   right: 22px;
-//   top: 22px;
-// }
-
 .burger {
   position: absolute;
   display: block;
   right: 20px;
   top: 35px;
+
+  @media screen and (max-width: 320px) {
+    right: 12px;
+  }
 }

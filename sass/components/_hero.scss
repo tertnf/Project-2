@@ -4,6 +4,24 @@
   margin-left: 40px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .goals-list {
+    display: flex;
+    & :not(:last-child) {
+      margin-right: 200px;
+      @media screen and (min-width: 1024px) {
+        margin-right: 430px;
+      }
+    }
+    justify-content: center;
+  }
+  .goals-list-item {
+    width: 353px;
+    color: #d9d9d9;
+
+    font-size: 20px;
+  }
+}
 .goals-list-item::before {
   position: absolute;
   left: -40px;
@@ -21,6 +39,18 @@
 .goals-list {
   margin-bottom: 40px;
   color: #f3f2f2;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 516px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 71px;
+    margin-bottom: 450px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 71px;
+    margin-bottom: 124px;
+  }
 }
 .hero-buttons {
   display: flex;
@@ -28,6 +58,20 @@
   margin-bottom: 40px;
   // margin: 0 -20px;
   margin: 0 -10px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 314px;
+    & :not(:last-child) {
+      margin-right: 688px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // padding-bottom: 314px;
+    padding-bottom: 0;
+    & :not(:last-child) {
+      margin-right: 450px;
+    }
+  }
 }
 
 .hero-button {
@@ -40,6 +84,20 @@
   padding: 13px 14px;
   // margin: 0 20px;
   margin: 0 10px;
+  @media screen and (min-width: 768px) {
+    width: 214px;
+    height: 64px;
+
+    color: #f6f5f6;
+
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    padding: 22px 40px;
+  }
 }
 
 .primary-button {
@@ -69,6 +127,19 @@
   color: #f0eded;
   text-align: center;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    color: #d9d9d9;
+    font-family: "Poppins";
+    font-size: 24px;
+
+    font-weight: 250;
+    line-height: normal;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 250;
+  }
 }
 .site-owner {
   font-family: "Oswald";
@@ -81,6 +152,15 @@
   letter-spacing: -0.04em;
 
   color: #e97af2;
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+    letter-spacing: -2.56px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-weight: 500;
+    font-size: 32px;
+  }
 }
 .site-owner-color {
   color: #f1efef;
@@ -89,4 +169,10 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 252px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

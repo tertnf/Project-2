@@ -51,10 +51,37 @@
   text-align: center;
 
   color: #1c1c1c;
-  margin: 30px -10px 35px -10px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
+
+  flex-basis: calc(100% / 3 - 20px);
+  width: 305px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 707px;
+    z-index: 5;
+    margin: unset;
+    flex-basis: calc(100% / 3 - 30px);
+    width: 418px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    display: block;
+    top: 450px;
+    left: 50px;
+    width: 150px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    & :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
-.counter-item::before {
+
+.counter-item :nth-child(1):before {
   content: "";
   display: block;
   width: 30px;
@@ -62,27 +89,54 @@
   position: absolute;
   z-index: -10;
   top: -10px;
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    top: unset;
+    margin-top: -10px;
+  }
 }
-.counter-list :nth-child(1)::before {
+.counter-item-number {
+  display: inline-block;
+}
+.counter-list :nth-child(1) :nth-child(1)::before {
   background-image: url(./../img/svg/ellipse-orange.svg);
-  margin-left: 18px;
+  // margin-left: 18px;
+  margin-left: -8px;
 }
-.counter-list :nth-child(2)::before {
+.counter-list :nth-child(2) :nth-child(1)::before {
   background-image: url(./../img/svg/ellipse-blue.svg);
-  margin-left: 7px;
+  // margin-left: 7px;
+  margin-left: -8px;
 }
-.counter-list :nth-child(3)::before {
+.counter-list :nth-child(3) :nth-child(1)::before {
   background-image: url(./../img/svg/ellipse-green.svg);
-  margin-left: -2px;
+  // margin-left: -2px;
 }
 
 .counter-item :last-child {
   margin-top: 15px;
+
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    margin-top: 0;
+  }
 }
 
 .counter-item {
   margin: 0px 10px;
   padding-left: 7px;
+
+  @media screen and (min-width: 768px) {
+    // width: 163px;
+
+    color: #d9d9d9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: unset;
+    padding: unset;
+  }
 }
 
 .counter-item-description {
@@ -95,6 +149,10 @@
   color: #1c1c1c;
 
   justify-content: space-around;
+
+  @media screen and (min-width: 768px) {
+    color: #d9d9d9;
+  }
 }
 
 .describe-slider-title {
@@ -118,4 +176,9 @@
   margin-bottom: 23px;
 
   color: #1c1c1c;
+}
+@media screen and (min-width: 375px) {
+  .describe-slider {
+    text-align: center;
+  }
 }
