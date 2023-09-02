@@ -1,28 +1,28 @@
-let tablinks = document.getElementsByClassName("tab_links");
-let tabcontents = document.getElementsByClassName("tab_contents");
+// let tablinks = document.getElementsByClassName("tab-links");
+// let tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-  for (let tablink of tablinks) {
-    tablink.classList.remove("active-link");
-  }
-  for (let tabcontent of tabcontents) {
-    tabcontent.classList.remove("active_tab");
-  }
-  event.currentTarget.classList.add("active-link", "is_open");
-  document.getElementById(tabname).classList.add("active_tab");
-}
+// function opentab(tabname) {
+//   for (let tablink of tablinks) {
+//     tablink.classList.remove("active-link");
+//   }
+//   for (let tabcontent of tabcontents) {
+//     tabcontent.classList.remove("active_tab");
+//   }
+//   event.currentTarget.classList.add("active-link", "is_open");
+//   document.getElementById(tabname).classList.add("active_tab");
+// }
 
-$summaries = document.querySelectorAll("li");
+// $summaries = document.querySelectorAll(".features-list li");
 
-for (let i = 0; i < $summaries.length; i++) {
-  const element = $summaries[i];
-  element.addEventListener("click", function () {
-    let id = this.id;
-    let index = parseInt(id);
-    let newid = `${index}t`;
-    document.getElementById(newid).classList.toggle("hidden");
-  });
-}
+// for (let i = 0; i < $summaries.length; i++) {
+//   const element = $summaries[i];
+//   element.addEventListener("click", function () {
+//     let id = this.id;
+//     let index = parseInt(id);
+//     let newid = `${index}t`;
+//     document.getElementById(newid).classList.toggle("hidden");
+//   });
+// }
 // виявилось що цей код не потрібен. фон не треба міняти.))
 // let detailsElements = document.querySelectorAll("details.qd");
 // console.log(detailsElements);
@@ -50,7 +50,7 @@ for (let i = 0; i < $summaries.length; i++) {
 let feedbackText = document.querySelectorAll(".feedback-text");
 let feedbackStyleClass = "feedback-text";
 let feedbackStyleClassModified = "feedback-text-cut";
-let feedbackCutLength = 100;
+let feedbackCutLength = 120;
 
 cutFeedbackTextCreation(
   feedbackText,
@@ -60,7 +60,7 @@ cutFeedbackTextCreation(
 );
 
 let articleText = document.querySelectorAll(".article-text");
-let articleCutLength = 50;
+let articleCutLength = 200;
 let articleStyleClass = "article-text";
 let articleStyleClassModified = "article-text-cut";
 cutFeedbackTextCreation(
@@ -129,29 +129,31 @@ function cutFeedbackTextCreation(
   });
 });
 
-const dropDownList = document.querySelector(".datalist-input");
+const dropDownList = document.querySelector(".datalist-input-wrap");
 
 let dataList = document.getElementsByClassName("datalist-list");
 let contactForm = document.getElementsByClassName("contacts-form");
 
 dropDownList.addEventListener("click", (event) => {
-  dataList[0].classList.toggle("hidden");
+  dataList[0].classList.toggle("dropdown-list-hidden");
   dataList[0].classList.toggle("is-open");
-  if (dataList[0].classList.contains("is-open")) {
-    contactForm[0].style.height = "434px";
-  } else contactForm[0].style.height = "300px";
+  // if (dataList[0].classList.contains("is-open")) {
+  //   contactForm[0].style.height = "434px";
+  // } else contactForm[0].style.height = "300px";
 });
 
 dataList[0].addEventListener("click", selectDatalistItem);
 
 function selectDatalistItem(event) {
+  const listInput = document.querySelector(".datalist-input");
   if (event.target.nodeName !== "LI") {
     return;
   }
-  dropDownList.value = event.target.textContent;
-  dataList[0].classList.toggle("hidden");
-  dataList[0].classList.toggle("is-open");
-  contactForm[0].style.height = "300px";
+  listInput.value = event.target.textContent;
+  dataList.classList.add("dropdown-list-hidden");
+  dataList.classList.remove("is-open");
+  // listInput.value =
+  // contactForm[0].style.height = "300px";
 }
 
 // // mobile-menu

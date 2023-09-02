@@ -3,6 +3,8 @@
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
   const linkMobileMenu = document.querySelectorAll(".mobile-menu-link");
+  const allMenuLinks = document.querySelectorAll(".mobile-menu-list li");
+  console.log(allMenuLinks);
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -15,7 +17,11 @@
     const scrollLockMethod = !isMenuOpen
       ? "disableBodyScroll"
       : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
+    // bodyScrollLock[scrollLockMethod](document.body);
+
+    allMenuLinks.forEach((item) => {
+      item.classList.toggle("link-fade");
+    });
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);

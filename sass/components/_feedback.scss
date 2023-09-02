@@ -1,12 +1,17 @@
 .feedback-list {
-  margin-top: 87px;
-  margin-bottom: 37px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  @media (min-width: 992px) {
+    margin-bottom: 30px;
+  }
 }
 .feedback-item {
   position: relative;
   background: #e1e9f0;
   border: 2px solid #ffffff;
-  box-shadow: 0px 20px 50px rgba(156, 126, 99, 0.25);
+  // box-shadow: 0px 20px 30px rgba(156, 126, 99, 0.25);
+  box-shadow: 0px 7px 20px 2px rgba(30, 35, 44, 0.15);
+
   border-radius: 20px;
   width: 322px;
   height: 436px;
@@ -14,10 +19,29 @@
   margin-right: auto;
   margin-top: 50px;
   cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 74px;
+    margin-bottom: 50px;
+    box-shadow: 0px 7px 20px 0px rgba(30, 35, 44, 0.15);
+  }
+  @media (min-width: 1200px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .feedback-title {
-  font-family: "Roboto";
-  font-style: normal;
+  // font-family: "Roboto";
+  // font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -26,12 +50,12 @@
   text-align: center;
 
   color: #1c1c1c;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .feedback-text {
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -40,14 +64,20 @@
 }
 
 .feedback-img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+  // position: absolute;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: solid 10px #ffffff;
-  left: 50%;
-  transform: translateX(-50%);
+  // left: 50%;
+  // transform: translateX(-50%);
   margin-top: -50px;
+  @media (min-width: 992px) {
+    width: 160px;
+    height: 160px;
+    border: solid 15px #ffffff;
+    margin-top: -80px;
+  }
 }
 .feedback-text {
   position: relative;
@@ -55,23 +85,54 @@
     position: absolute;
     content: "";
     display: block;
-    background-image: url(./../img/svg/quotation-top.svg);
-    width: 22px;
-    height: 24px;
+    background-image: url("../img/svg/quotation-2.svg");
+    width: 28px;
+    height: 28px;
     top: -32px;
+    background-repeat: no-repeat;
+    left: 1px;
   }
   &::after {
     position: absolute;
     content: "";
     display: block;
-    background-image: url(./../img/svg/quotation-bottom.svg);
-    width: 22px;
-    height: 24px;
+    background-image: url("../img/svg/quotation-3.svg");
+    width: 26px;
+    height: 26px;
     right: 0;
     bottom: -40px;
+    background-repeat: no-repeat;
   }
 }
 .feedback-wrap {
-  padding: 81px 36px 86px 36px;
+  padding: 30px 36px 86px 36px;
   overflow: hidden;
+  position: relative;
+}
+.feedback-section {
+  padding-bottom: 90px;
+  @media (min-width: 992px) {
+  }
+}
+.feedback-wrap:has(.hidden)::after {
+  content: url("../img/svg/double-arrow-down.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  left: calc(50% - 15px);
+  color: $main-background-color;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+}
+.feedback-wrap:has(.feedback-text-cut.hidden)::after {
+  content: url("../img/svg/double-arrow-up.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  left: calc(50% - 15px);
+  text-align: center;
+  color: $main-background-color;
+  transition: all 500ms ease-in-out;
 }

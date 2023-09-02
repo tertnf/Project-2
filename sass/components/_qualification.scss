@@ -1,5 +1,6 @@
 .qualification-section {
   background-color: $main-background-color;
+  padding-bottom: 60px;
 }
 
 .qualification-slider-description {
@@ -8,16 +9,43 @@
 }
 
 .qualification-description {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
+  // font-family: "Poppins";
+  // font-style: normal;
+  // font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-
+  margin-bottom: 30px;
   color: #f0efef;
+  @media (min-width: 992px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .qualification-section h2 {
   margin-bottom: 15px;
+}
+.qualification-slider .slick-slide img {
+  object-fit: contain !important;
+  @media (min-width: 1200px) {
+    height: 280px !important;
+    object-fit: cover !important;
+  }
+}
+
+.slick-track {
+  @media (min-width: 768px) {
+    display: flex !important;
+    // gap: 10px;
+  }
+}
+.qualification-slider .slider__item p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.qualification-slider .slick-track {
+  @media (min-width: 700px) {
+    gap: 10px;
+  }
 }

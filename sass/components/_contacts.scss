@@ -28,11 +28,12 @@
 }
 .contacts-bg-wrap {
   position: relative;
-  max-width: 323px;
-  height: 231px;
-
+  // max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: 992px) {
+    max-width: 450px;
+  }
 }
 
 .contacts-item::before {
@@ -45,7 +46,7 @@
 }
 .contacts-list {
   position: relative;
-  margin-bottom: 57px;
+  // margin-bottom: 57px;
   & :nth-child(1).contacts-item::before {
     background-image: url(../img/svg/whatsapp.svg);
 
@@ -66,6 +67,40 @@
     background-image: url(../img/svg/round-email.svg);
     width: 40px;
     height: 40px;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    ".";
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+  }
+  @media (min-width: 992px) {
+    margin-bottom: 0px;
   }
 }
 
@@ -94,8 +129,8 @@
   margin-left: 70px;
 }
 .contacts-link {
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -109,41 +144,49 @@
 }
 
 .contacts-text {
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  // font-size: 16px;
+  // line-height: 24px;
   text-align: center;
 
   color: #1c1c1c;
   margin-top: 20px;
   margin-bottom: 37px;
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+}
+.contacts-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts-form {
   position: relative;
   padding: 21px 20px 59px 20px;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  height: 300px;
+  // width: 320px;
+  // height: 300px;
   // height: 434px;
 
   background: #fdfdfd;
   box-shadow: 0px 7px 20px rgba(35, 32, 28, 0.15);
   border-radius: 20px;
   & input {
-    width: 280px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid #d4d4d4;
     margin-bottom: 20px;
     padding-left: 20px;
     &::placeholder {
-      font-family: "Poppins";
-      font-style: normal;
+      // font-family: "Poppins";
+      // font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
@@ -154,7 +197,12 @@
     }
   }
 }
-
+.contacts-section {
+  padding-bottom: 80px;
+  @media (min-width: 992px) {
+    padding-bottom: 30px;
+  }
+}
 .contacts-section .contacts-button {
   width: 225px;
   height: 50px;
@@ -163,12 +211,12 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
-.contacts-section {
-  padding-bottom: 65px;
-}
+
 .datalist-input-wrap {
   position: relative;
+  cursor: pointer;
 }
+
 .contacts-form .datalist-input-wrap::before {
   top: 15px;
   position: absolute;
@@ -187,14 +235,11 @@
 }
 
 .datalist-list {
-  top: 240px;
-  position: absolute;
-  padding: 8px 55px 10px 20px;
-
-  width: 280px;
-  height: 149px;
-
-  border: 1px solid #d5d5d5;
+  margin-top: 5px;
+  padding: 0px 4px 0px 20px;
+  top: 46px;
+  width: 100%;
+  border: 0px solid #d5d5d5;
   border-radius: 5px;
   & :not(:last-child) {
     margin-bottom: 12px;
@@ -202,11 +247,61 @@
 }
 
 .datalist-item {
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
   color: #828181;
+}
+.datalist-input {
+  margin-bottom: 0px !important;
+}
+
+.is-open {
+  // grid-template-rows: 1fr;
+  // max-height: 300px;
+  transition: all 1s;
+  padding: 8px 4px 10px 20px;
+  // border: 1px solid #d5d5d5;
+}
+.dropdown-list-hidden {
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: all 1s;
+  overflow: hidden;
+  max-height: 0;
+}
+.contacts-wrap {
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}
+.form-wrap {
+  flex: 0 0 40%;
+}
+input[name="Message"] {
+  cursor: pointer;
+}
+.form__checkbox-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+.form__checkbox-text {
+  color: #2e2d2d;
+  line-height: 100% !important;
+  font-weight: 300;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  @media (min-width: 767px) {
+    font-size: 16px;
+  }
+}
+.form__checkbox-wrapper input[type="checkbox"] {
+  height: 20px;
+  width: unset;
+  margin-bottom: 0px !important;
 }

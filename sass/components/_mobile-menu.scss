@@ -17,23 +17,16 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
-    @media screen and (max-width: 375px) {
-      margin-bottom: 10px;
-    }
   }
 }
 
 .mobile-menu-link {
   color: #fff;
   font-size: 22px;
-  font-family: Poppins;
-  font-style: normal;
+  // font-family: Poppins;
+  // font-style: normal;
   font-weight: 500;
   line-height: normal;
-
-  @media screen and (max-width: 375px) {
-    font-size: 20px;
-  }
 }
 
 .menu-container {
@@ -44,13 +37,15 @@
   padding: 70px 40px 56px 36px;
   top: 0;
   left: 0;
-  display: none;
+  // display: none;
   z-index: 200;
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
   &.is-open {
     display: block;
     transform: translateX(0);
+    transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: -webkit-fill-available;
 
     & .menu-open-icon {
       display: block;
@@ -66,7 +61,7 @@
   background-color: transparent;
   padding: 0px 0px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     display: none;
   }
 }
@@ -77,7 +72,7 @@
   height: 25px;
   right: 22px;
   top: 22px;
-  z-index: 300;
+  // z-index: 300;
   border: none;
   background-color: transparent;
   margin-left: 0 auto;
@@ -85,22 +80,50 @@
   cursor: pointer;
   outline: none;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     display: none;
   }
 }
 
-.is-none {
-  display: none;
-}
-
 .burger {
-  position: absolute;
+  // position: absolute;
   display: block;
   right: 20px;
   top: 35px;
+}
+.mobile-menu-list li.mobile-menu-item {
+  opacity: 0;
+}
 
-  @media screen and (max-width: 320px) {
-    right: 12px;
-  }
+.mobile-menu-list li.link-fade:nth-child(1) {
+  opacity: 1;
+  transition: all 0.5s ease 0.2s;
+}
+.mobile-menu-list li.link-fade:nth-child(2) {
+  opacity: 1;
+  transition: all 0.5s ease 0.4s;
+}
+.mobile-menu-list li.link-fade:nth-child(3) {
+  opacity: 1;
+  transition: all 0.5s ease 0.6s;
+}
+.mobile-menu-list li.link-fade:nth-child(4) {
+  opacity: 1;
+  transition: all 0.5s ease 0.8s;
+}
+.mobile-menu-list li.link-fade:nth-child(5) {
+  opacity: 1;
+  transition: all 0.5s ease 1s;
+}
+.mobile-menu-list li.link-fade:nth-child(6) {
+  opacity: 1;
+  transition: all 0.5s ease 1.2s;
+}
+.mobile-menu-list li.link-fade:nth-child(7) {
+  opacity: 1;
+  transition: all 0.5s ease 1.4s;
+}
+.mobile-menu-list li.link-fade:nth-child(8) {
+  opacity: 1;
+  transition: all 0.5s ease 1.6s;
 }

@@ -6,11 +6,11 @@
 }
 
 .consultation-list {
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 187.19%;
+  // font-size: 16px;
+  // line-height: 187.19%;
   /* or 30px */
 
   color: #1c1c1c;
@@ -21,18 +21,15 @@
   margin-bottom: 10px;
 }
 
-.consultation-details-list {
-  margin-top: 40px;
-}
 .consultation-details-item {
   position: relative;
   padding-left: 50px;
 
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  // font-size: 16px;
+  // line-height: 24px;
 
   color: #000000;
 
@@ -51,10 +48,80 @@
   background-position: center;
   background-size: contain;
   position: absolute;
+  @media (min-width: 982px) {
+    display: none;
+  }
 }
 
 .consultation-section h3 {
   font-weight: 400;
   margin-top: 25px;
   margin-bottom: 15px;
+  @media (min-width: 982px) {
+    margin-bottom: 30px;
+  }
+}
+
+.consultation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 982px) {
+    display: none;
+  }
+}
+.hidden-list {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 500ms ease-in-out;
+}
+.hidden-list > ul {
+  overflow: hidden !important;
+}
+.open-list {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-top: 30px;
+}
+.consultation-mobile {
+  display: none;
+  @media (min-width: 982px) {
+  }
+}
+.consultation-desktop {
+  display: none;
+  @media (min-width: 982px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.consultation-desktop-item > .consultation-details-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.consultation-desktop-item .consultation-details-list.left-column {
+  align-items: flex-start;
+}
+.consultation-desktop-item > .consultation-details-list li {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.consultation-desktop-item > .consultation-details-list li img {
+  width: 40px;
+}
+.consultation-desktop-item {
+  width: 33%;
+}
+
+.consultation-desktop-item
+  .consultation-details-list.left-column
+  li:nth-child(1),
+.consultation-desktop-item
+  .consultation-details-list.left-column
+  li:nth-child(4) {
+  margin-left: -40px;
 }

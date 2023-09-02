@@ -10,12 +10,12 @@ $gradient: $header-gradient-2-color-1 0.48%, $header-gradient-1-color-1 45.65%,
 
 // linear-gradient(90.88deg, #5b1ea9 0.48%, #e97af2 45.65%, #2b5cc7 59.61%, #2b5cc7 84.4%)
 h2 {
-  margin-top: 40px;
+  padding-top: 40px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 47px;
+  line-height: 140%;
   text-transform: uppercase;
   @mixin gradient($direction, $gradient) {
     // background: -webkit-linear-gradient($direction, $gradient);
@@ -28,39 +28,36 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
+  margin-bottom: 20px;
   text-align: center;
+  @media (min-width: 992px) {
+    font-size: 48px;
+    font-weight: 600;
+  }
 }
-// .title-gradient {
-//   font-family: "Oswald";
-//   font-style: normal;
-//   font-weight: 600;
-//   font-size: 32px;
-//   line-height: 47px;
-//   text-transform: uppercase;
-//   background: linear-gradient(87.84deg, #5b1ea9 -3.52%, #2b5cc7 111.4%);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-//   text-fill-color: transparent;
-//   text-align: center;
-// }
 
 .secondary-text {
-  font-family: "Poppins";
-  font-style: normal;
+  // font-family: "Poppins";
+  // font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 187.19%;
   /* or 30px */
 
   color: #1c1c1c;
+  @media (min-width: 992px) {
+    font-size: 18px;
+  }
+}
+
+.secondary-text:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 h3 {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   /* identical to box height */
@@ -79,23 +76,36 @@ section {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 47px;
+  line-height: 140%;
   text-align: center;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-bottom: 26px;
 
-  background: linear-gradient(88.74deg, #d7a3e4 -3.98%, #eceef1 110.81%),
-    #000000;
+  background: linear-gradient(271deg, #e97af2 -3.98%, #2b5cc7 110.81%), #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  width: 203px;
+  @media (min-width: 992px) {
+    font-size: 48px;
+    font-weight: 600;
+    // margin-top: 50px;
+  }
+  // width: 203px;
 }
 
 .primary-section {
-  padding-top: 20px;
+  // padding-top: 20px;
   background-color: $main-background-color;
+  padding-bottom: 50px;
+  @media (min-width: 992px) {
+    padding-bottom: 50px;
+  }
 }
 
 .hidden {
   display: none;
+}
+
+.secondary-section {
+  padding-bottom: 60px;
 }
