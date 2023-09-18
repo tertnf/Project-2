@@ -332,7 +332,7 @@ img {
 }
 
 .glow-on-hover.secondary-button:after {
-  background: #331832;
+  background: transparent;
 }
 
 @-webkit-keyframes glowing {
